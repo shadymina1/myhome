@@ -1,0 +1,155 @@
+/* BASE ELEMENTS */
+
+body {
+    font-family: serif;
+    line-height: 1.1;
+    color: #000000;
+    background-color: #bbbbbb;
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 1.8em;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* HEADER */
+
+.main-header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #d9e4ea;
+    margin: 1em;
+}
+
+.main-nav {
+    margin-top: 5px;
+}
+
+.main-nav li {
+    text-transform: uppercase;
+}
+
+.main-nav a,
+.name a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+    font-size: 1.4em;
+    color: #536473;
+}
+
+.name {
+    font-size: 1.45em;
+    margin: 0;
+}
+
+.main-nav a:hover {
+    color: #2701ff;
+}
+
+/** MAIN CONTENT **/
+.container {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+
+/* FORMS */
+form {
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 60px 20px;
+    background: #f4f7f8;
+    border-radius: 40px;
+    margin-bottom: 9em;
+}
+
+form h1 {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+input, textarea, select  {
+    background: #fff;
+    border: 2x solid #a9d175;
+    font-size: 1.6em;
+    height: auto;
+    margin: 0 0 20px 0;
+    width: 100%;
+    color: #3a3a3a;
+}
+.small {
+    font-family: serif;
+    
+    
+}
+button {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #9fbd79;
+    width: 100%;
+    border: 5px solid #a9d175;
+    border-radius: 6px;
+}
+
+/* FOOTER */
+
+.main-footer {
+    text-align: center;
+    background-color: rgb(222, 223, 188);
+    padding-top: 0 em;
+    padding-bottom: 0;
+}
+
+/* MEDIA QUERIES */
+
+/* TABLET */
+@media (min-width: 769px) {
+
+    .main-header,
+    .main-nav,
+    .container {
+        display: flex;
+    }
+
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+}
+
+/* DESKTOP */
+@media (min-width: 1025px) {
+
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1150px;
+    }
+
+}
